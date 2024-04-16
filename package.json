@@ -2,7 +2,7 @@
   "name": "project_team_pair_share",
   "version": "1.0.0",
   "description": "",
-  "main": "PTPS_BOT.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
