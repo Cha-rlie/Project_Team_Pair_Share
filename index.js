@@ -69,4 +69,6 @@ client.on("message", async message => {
     }
 });
 
+console.log(token);
 client.login(token);
+console.log("Bot is online!");
