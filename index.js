@@ -1,15 +1,15 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
-const axios = require("axios");
-const express = require("express");
-const { InteractionType, InteractionResponseType, verifyKeyMiddleware } = require('discord-interactions');
+//const axios = require("axios");
+//const express = require("express");
+//const { InteractionType, InteractionResponseType, verifyKeyMiddleware } = require('discord-interactions');
 
 const { Client, Collection, Events, GatewayIntentBits } = require("discord.js");
 
-const app = express();
+//const app = express();
 
-const discord_api = axios.create({
+/*const discord_api = axios.create({
     baseURL: "https://discord.com/api/",
     timeout: 3000,
     headers: {
@@ -18,7 +18,7 @@ const discord_api = axios.create({
         "Access-Control-Allow-Headers": "Authorization",
         "Authorization": `Bot ${TOKEN}`
     }
-})
+})*/
 
 const dotenv = require("dotenv");
 dotenv.config();
