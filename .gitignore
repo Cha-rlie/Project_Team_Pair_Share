@@ -2,4 +2,4 @@
 .env
 
 # This information can be restored with package.json and package-lock.json
-#node_modules
+node_modules
