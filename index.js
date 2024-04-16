@@ -1,9 +1,28 @@
 const fs = require("node:fs");
 const path = require("node:path");
+
+const axios = require("axios");
+const express = require("express");
+const { InteractionType, InteractionResponseType, verifyKeyMiddleware } = require('discord-interactions');
+
 const { Client, Collection, Events, GatewayIntentBits } = require("discord.js");
+
+const app = express();
+
+const discord_api = axios.create({
+    baseURL: "https://discord.com/api/",
+    timeout: 3000,
+    headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+        "Access-Control-Allow-Headers": "Authorization",
+        "Authorization": `Bot ${TOKEN}`
+    }
+})
 
 const dotenv = require("dotenv");
 dotenv.config();
+const token = process.env.BOT_TOKEN;
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds]});
 
@@ -50,4 +69,4 @@ client.on("message", async message => {
     }
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(token);
