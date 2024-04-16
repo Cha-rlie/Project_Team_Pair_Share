@@ -1,0 +1,16 @@
+{
+  "name": "project_team_pair_share",
+  "version": "1.0.0",
+  "description": "",
+  "main": "PTPS_BOT.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  }
+}
